@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadJSON() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://api.learn2crack.com")
+                .baseUrl("https://gist.githubusercontent.com")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         RequestInterface request = retrofit.create(RequestInterface.class);
